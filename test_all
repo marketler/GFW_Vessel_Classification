@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+# Run python TF tests.
+export TF_CPP_MIN_LOG_LEVEL=2
+python -m classification.metadata_test
+python -m classification.models.models_test
